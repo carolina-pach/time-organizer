@@ -23,10 +23,10 @@ console.log(hourNow);
 
 for (let i = 9; i < 18; i++) {
   if (hourNow > i) {
-    $('#hour-' + i).addClass('past');
+    $(`#hour-${i}`).addClass('past');
   } else if (hourNow === i) {
-    $('#hour-' + i).addClass('present');
+    $(`#hour-${i}`).addClass('present');
   } else {
-    $('#hour-' + i).addClass('future');
+    $(`#hour-${i}`).addClass('future');
   }
 }
